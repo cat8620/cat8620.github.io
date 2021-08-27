@@ -3,7 +3,7 @@
         <el-row>
             <el-card>
                 <el-carousel :interval="4000" type="card" height="330px">
-                    <el-carousel-item v-for="item in imgList" :key="item">
+                    <el-carousel-item v-for="(item) in imgList" :key="item.index">
                         <el-tooltip class="item" effect="dark" :content="item.title" placement="top">
                             <el-image :src="item.url" ></el-image>
                         </el-tooltip>
@@ -16,28 +16,87 @@
             <el-card>
                 <el-row>
                     <el-col :span="5">
-                        <el-image src="https://img12.360buyimg.com/cms/jfs/t1/52390/35/13874/60767/5da9926aEea3fdc3b/a0eb6f6ba283d73e.jpg.webp"></el-image>
+                        <el-image src="https://img14.360buyimg.com/n0/jfs/t1/202543/38/2672/261182/612309beE2a9aed5f/ff17f3ff6d837070.jpg"></el-image>
                     </el-col>
                     <el-col :span="1"><div class="none"></div></el-col>
                     <el-col :span="5">
-                        <el-image src="https://img11.360buyimg.com/cms/jfs/t8299/104/2106646636/43458/5ae0afba/59c4edd9N192bf8e6.jpg.webp"></el-image>
+                        <el-image src="https://img14.360buyimg.com/n0/jfs/t1/203860/21/2861/154406/61249d77E3d36c05f/857b9a5335ab299c.jpg"></el-image>
                     </el-col>
                     <el-col :span="1"><div class="none"></div></el-col>
-                    <el-col :span="6">
+                    <el-col :span="6" style="padding: 5px;">
                         <el-row class="customCard">
                             <el-row >
-
                                 <span class="channelItemName">八月优惠</span>
-                                <span class="channelItemTitle">大牌九折</span>
+                                <span class="channelItemTitle">零食上新</span>
                             </el-row>
                             <el-row >
                                 <el-col :span="2"><div class="none"></div></el-col>
                                 <el-col :span="9">
-                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t1/192075/19/7768/152588/60c30697E5104987e/fd1289a9422ba3c9.jpg"></el-image>
+                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t1/194090/25/1709/135975/6094f004E1a96b0b3/6191edbd17c0ac2c.jpg"></el-image>
                                 </el-col>
                                 <el-col :span="2"><div class="none"></div></el-col>
                                 <el-col :span="9">
-                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t1/187109/27/20144/196403/6126faa0E6a1cdcb6/bdfe0dc718142d07.jpg"></el-image>
+                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t1/152134/13/11419/113071/5fe3f748Ee3a928f9/2717ae0213548ada.jpg"></el-image>
+                                </el-col>
+
+                            </el-row>
+                        </el-row>
+                    </el-col>
+                    <el-col :span="6" style="padding: 5px;">
+                        <el-row class="customCard">
+                            <el-row >
+
+                                <span class="channelItemName">多种零食</span>
+                                <span class="channelItemTitle">尽享各种美味</span>
+                            </el-row>
+                            <el-row >
+                                <el-col :span="2"><div class="none"></div></el-col>
+                                <el-col :span="9">
+                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t1/11563/7/7754/415974/5c6289aaE184d500d/059172d9637b2933.jpg"></el-image>
+                                </el-col>
+                                <el-col :span="2"><div class="none"></div></el-col>
+                                <el-col :span="9">
+                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t4390/176/2119420636/338063/836c8b7/58eb5339N6db96988.jpg"></el-image>
+                                </el-col>
+
+                            </el-row>
+                        </el-row>
+                    </el-col>
+                    <el-col :span="1"><div class="none"></div></el-col>
+                    <el-col :span="6" style="padding: 5px;">
+                        <el-row class="customCard">
+                            <el-row >
+                                <span class="channelItemName">甜蜜时刻</span>
+                                <span class="channelItemTitle">优惠多多</span>
+                            </el-row>
+                            <el-row >
+                                <el-col :span="2"><div class="none"></div></el-col>
+                                <el-col :span="9">
+                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t1/6682/23/18413/217939/60f51d0eE47a9edfa/bd08dbca8fac074a.jpg"></el-image>
+                                </el-col>
+                                <el-col :span="2"><div class="none"></div></el-col>
+                                <el-col :span="9">
+                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t21028/79/14469742/321430/aa32b887/5af565bbN4acf3b33.jpg"></el-image>
+                                </el-col>
+
+                            </el-row>
+                        </el-row>
+                    </el-col>
+                    <el-col :span="6" style="padding: 5px;">
+                        <el-row class="customCard">
+                            <el-row >
+
+                                <span class="channelItemName">香甜奶棒</span>
+                                <span class="channelItemTitle">收获一天美好</span>
+                            </el-row>
+                            <el-row >
+                                <el-col :span="2"><div class="none"></div></el-col>
+                                <el-col :span="9">
+                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t1/5261/39/9514/305513/5bac8decE506481ec/2baaee265e481896.jpg"></el-image>
+                                </el-col>
+                                <el-col :span="2"><div class="none"></div></el-col>
+                                <el-col :span="9">
+                                    <el-image src="https://img14.360buyimg.com/n0/jfs/t1/13/13/10494/315480/5bac8decEde0d1ca0/c45383f17865afdf.jpg"></el-image>
                                 </el-col>
 
                             </el-row>
